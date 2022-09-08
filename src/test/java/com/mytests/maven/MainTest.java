@@ -1,11 +1,22 @@
 package com.mytests.maven;
 
+import org.junit.Test;
+
 import java.util.Locale;
 import java.util.ResourceBundle;
 
+import static org.junit.Assert.*;
 
-public class Main {
-    public static void main(String[] args) {
+/**
+ * *
+ * <p>Created by irina on 9/8/2022.</p>
+ * <p>Project: maven-resource-filtering</p>
+ * *
+ */
+public class MainTest {
+
+    @Test
+    public void testAll() {
         Locale locale = new Locale("en", "En");
         ResourceBundle exampleBundle = ResourceBundle.getBundle("messages", locale);
 
